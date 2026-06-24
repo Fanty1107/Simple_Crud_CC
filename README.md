@@ -25,7 +25,7 @@ Este projeto utiliza um `Makefile` para automatizar o processo de compilação. 
 
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/Fanty1107/Simple_Crud_CC.git](https://github.com/Fanty1107/Simple_Crud_CC.git)
+   git clone https://github.com/Fanty1107/Simple_Crud_CC.git
 2. Compilar:
    ```bash
    make
