@@ -19,7 +19,7 @@ Para compilar e executar este projeto localmente, você precisará ter instalado
 * Ferramenta de automação de build: `make`
 * Compilador para a linguagem [Nome da Linguagem, ex: C/C++] (ex: clang++ ou g++)
 
-## 🛠️ Como compilar e executar
+## Como compilar e executar
 
 Este projeto utiliza um `Makefile` para automatizar o processo de compilação. Siga os passos abaixo no seu terminal:
 
