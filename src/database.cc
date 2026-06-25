@@ -2,6 +2,7 @@
 
 void Database::write(vector<vector<string>> mainList){
     ofstream db;
+    filesystem::create_directory("db");
     db.open("db/lists.sl");
 
     if(db.is_open()){
