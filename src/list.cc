@@ -26,7 +26,7 @@ void List::print_menu(string name) {
             break;
         case 4:
             cout << "Exiting..." << endl;
-            exit(0);
+            return;
             break;
         default:
             cout << "Invalid choice. Please try again." << endl;
@@ -61,11 +61,9 @@ void List::print_list() {
     else 
     {
         for(size_t i = 0; i < list.size(); i++) {
-        cout << i + 1 << " - " << list[i] << endl;
+        cout << " * " << list[i] << endl;
         }
         cout << "\nTotal items in the list: " << list.size() << endl;
-        cout<< "M - Menu\n";
-
         menu_option();
     }
 }
@@ -106,6 +104,20 @@ void List::menu_option() {
     else
     {
         cout << "Exiting..." << endl;
-        exit(0);
+        return;
     }
+}
+
+void List::find_userList() {
+    bool userFind = false;
+    cout << "\n**** Welcome " << username << "*********" << endl;
+    for(uint i = 0; i< mainList.size(); i++){
+        if(mainList[i][0] == username){
+            cout << "User has been found " << mainList[i][0] << "\n";
+            list = mainList[i];
+            userFind = true;
+            break;
+        }
+    }
+
 }
